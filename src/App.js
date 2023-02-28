@@ -27,10 +27,11 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/otp" element={<ResetPage />} />
         <Route path="/reset" element={<Reset />} />
+        <Route path="/home" element={<HomePage />} />
         {localStorage.getItem("isUserLoggedIn") ? (
           <>
             <Route path="/account" element={<AccountPage />} />
-            <Route path="/home" element={<HomePage />} />
+
             <Route path="/header" element={<Header />} />
             <Route path="/sellerdashboard" element={<SellerDashboard />} />
             <Route path="/cart" element={<CartPage />} />

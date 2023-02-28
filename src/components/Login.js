@@ -80,7 +80,7 @@ function Login() {
     localStorage.setItem("isUserLoggedIn", true);
     console.log(localStorage.getItem("isUserLoggedIn"));
     if (userType == "Buyer") {
-      window.location.href = "/home";
+      navigate("/home");
     } else {
       navigate("/sellerdashboard");
     }

@@ -17,7 +17,6 @@ import UpdateItems from "./components/productManagement/UpdateItems";
 import ProductPageDetails from "./pages/ProductDetailsPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import Success from "./components/paymentGateway/Success";
-import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
@@ -53,7 +52,6 @@ function App() {
         ) : (
           <Route path="/" element={<Main />} />
         )}
-        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
